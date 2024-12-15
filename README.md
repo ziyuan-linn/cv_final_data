@@ -1,6 +1,6 @@
 # Fall 2024 Computer Vision Final Project Data
 
-This repository contains the cleaned up data for the fall 2024 Computer Vision final project. To access the data, [clone this repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) on the machine where you train the model.
+This repository contains the cleaned up data for the fall 2024 Computer Vision final project. To access the data, [clone this repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) on the machine where you train the model. This repository is fairly large, so it might take a few minutes to clone.
 
 ## Data Organization
 
