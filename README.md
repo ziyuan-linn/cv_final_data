@@ -1,6 +1,6 @@
 # Fall 2024 Computer Vision Final Project Data
 
-This repository contains the cleaned up images and annotations for the fall 2024 Computer Vision Final Project. To access the data, [clone this repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) on the machine where you load the data and train the model.
+This repository contains the cleaned up data for the fall 2024 Computer Vision final project. To access the data, [clone this repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) on the machine where you train the model.
 
 ## Data Organization
 
@@ -20,13 +20,13 @@ data/
 │   ├── S_000001_frame_3623.annotation.txt
 ```
 
-It is guaranteed that each subdirectory in the data folder contains at least 4 files: a pair of PNG image files and a pair of annotation. Each subdirectory may contain more than 4 files (such as the bounding box images), but we don't have to worry about those.
+It is guaranteed that each subdirectory in the data folder contains at least 4 files: a pair of PNG image files and a pair of annotation txt files. Each subdirectory may contain more than 4 files (such as the bounding box images), but we don't have to worry about those.
 
-It is also guaranteed that the the images and annotations are named as `*_aaaa.png`, `*_aaaa.annotation.txt`, `*_bbbb.png`, and `*_bbbb.annotation.txt`. The `*` represent 0 or more of any character; `aaaa` and `bbbb` represent two different 4-digit frame numbers.
+It is also guaranteed that the images and annotations are named as `*_aaaa.png`, `*_aaaa.annotation.txt`, `*_bbbb.png`, and `*_bbbb.annotation.txt`. The `*` represent 0 or more of any character; `aaaa` and `bbbb` represent two different 4-digit frame numbers.
 
 It is guaranteed that the labels are in the correct format (contains 8 space-separated numbers).
 
-It has NOT be verified whether the PNGs have the same dimension, so a transform pipeline before training is necessary. It is also NOT verified whether each label is correct. The hope is that a few incorrect annotations won't affect the training result too much.
+It has NOT be verified whether the PNGs have the same dimension, so a transform pipeline before training is necessary. It is also NOT verified whether the annotations are correct. The hope is that a few incorrect annotations won't affect the training result too much.
 
 ## Data Index
 
@@ -42,3 +42,5 @@ Here is an example of what the file looks like:
 data/Pair_S_000001_3503_3563/S_000001_frame_3503.png,data/Pair_S_000001_3503_3563/S_000001_frame_3503.annotation.txt,data/Pair_S_000001_3503_3563/S_000001_frame_3563.png,data/Pair_S_000001_3503_3563/S_000001_frame_3563.annotation.txt
 data/Pair_S_000001_3563_3623/S_000001_frame_3563.png,data/Pair_S_000001_3563_3623/S_000001_frame_3563.annotation.txt,data/Pair_S_000001_3563_3623/S_000001_frame_3623.png,data/Pair_S_000001_3563_3623/S_000001_frame_3623.annotation.txt
 ```
+
+Iterating through this file line-by-line should simplify the data loading process.
